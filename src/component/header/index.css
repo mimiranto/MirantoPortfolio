@@ -36,3 +36,12 @@ ul{
 .CV a:hover{
     background-color: rgb(56, 55, 55);
 }
+
+.Projet a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+  }
