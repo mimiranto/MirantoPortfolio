@@ -14,8 +14,8 @@ function Footer(){
                 <h3>© Designed by Miranto</h3>
             </div>
             <div className='logo'>
-                <a href=''><FontAwesomeIcon icon={faLinkedin} size="lg" style={{ color: "#ffffff" }} /></a>
-                <a href=''><FontAwesomeIcon icon={faGithub} size="lg" style={{ color: "#ffffff" }} /></a>
+                <a href='https://www.linkedin.com/in/miranto-rakotobe-7492312a4/'><FontAwesomeIcon icon={faLinkedin} size="lg" style={{ color: "#ffffff" }} /></a>
+                <a href='https://github.com/mimiranto'><FontAwesomeIcon icon={faGithub} size="lg" style={{ color: "#ffffff" }} /></a>
             </div>
         </div>
 
