@@ -22,10 +22,9 @@ ul{
     margin: 35px;
     margin-right: 58px;
 }
+
 .CV a{
     text-decoration: none;
     color: white;
     font-size: x-large;
-    border: black;
-    border-radius: 10px;
 }
