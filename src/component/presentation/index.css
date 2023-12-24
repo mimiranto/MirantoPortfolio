@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.textecontainer{
+    border: solid 1px white;
+    border-radius: 5px;
+    box-shadow: white;
+    margin-left: 50%;
+    margin-right: 1%;
+    margin-top: 170px;
+    background-color: rgb(32, 31, 31);
+    transition: background-color 0.3s ease;
+    padding: 2%;
+    
+}
+
+.textecontainer:hover{
+    background-color: rgb(56, 55, 55);
+}
+
+.textecontainer h3{
+    font-size: 14px;
+}
+
