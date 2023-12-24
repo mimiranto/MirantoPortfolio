@@ -1,5 +1,5 @@
 .footer{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-top: 30px;
     border-top: solid 2px white;
     display: flex;
@@ -9,10 +9,28 @@
     margin-top: 45px;
     font-size: 11px;
 }
+.texte{
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+.texte h3{
+    margin-top: 15px;
+    margin-bottom: -4px;
+}
+
 .logo{
     margin: 35px 45px 5px 0px;
     font-size: large;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     
+}
+.footer a {
+    text-decoration: none;
+    color: white;
 }
