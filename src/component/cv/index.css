@@ -1,0 +1,13 @@
+body{
+    background-color: #131212;
+}
+.cv {
+    text-align: center;
+}
+.cv img{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid 2px black;
+    box-shadow: black;
+}

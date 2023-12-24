@@ -1,0 +1,31 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px white;
+}
+
+.Navbar h1{
+    margin-left: 58px;
+    margin-top: 30px;
+}
+
+.reseau li{
+    list-style: none;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    margin: 35px;
+    margin-right: 58px;
+}
+.CV a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    border: black;
+    border-radius: 10px;
+}
