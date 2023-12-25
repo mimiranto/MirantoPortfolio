@@ -1,3 +1,5 @@
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
+
 .Navbar{
     display: flex;
     justify-content: space-between;
@@ -44,4 +46,47 @@ ul{
 }
 html {
     scroll-behavior: smooth;
-  }
+}
+.tooglebtn{
+    display: none;
+}
+
+@media screen and (max-width:432px){
+    .reseau {
+        position : absolute;
+        background-color: #131212;
+        transform: translateX(-1000px);
+        transition: 1s;
+        bottom: 0;
+        height: 89vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+    }
+    .tooglebtn{
+        display: block;
+        margin-top: 35px;
+        margin-right: 60px;
+    }
+    .tooglebtn .cross{
+        display: none;
+    }
+    .active .reseau {
+        transform: translateX(0px);
+        transition: 1s;
+    }
+    .active .burger{
+        display: none;
+    }
+    .active .cross{
+        display: block;
+    }
+    
+}
