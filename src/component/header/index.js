@@ -22,9 +22,9 @@ function Header() {
       <div className='reseau'>
         <ul>
           <li className='Projet' onClick={handleToggle}><a href='#projet'>Mes projets</a></li>
-          <li><a href='https://www.linkedin.com/in/miranto-rakotobe-7492312a4/' target="_blank"><FontAwesomeIcon icon={faLinkedin} size="2xl" style={{ color: "#ffffff" }} /></a></li>
-          <li><a href='https://github.com/mimiranto' target="_blank"><FontAwesomeIcon icon={faGithub} size="2xl" style={{ color: "#ffffff" }} /></a></li>
-          <li className='CV'><Link to="/ma-nouvelle-page" target='_blank'>CV</Link></li>
+          <li onClick={handleToggle}><a href='https://www.linkedin.com/in/miranto-rakotobe-7492312a4/' target="_blank"><FontAwesomeIcon icon={faLinkedin} size="2xl" style={{ color: "#ffffff" }} /></a></li>
+          <li onClick={handleToggle}><a href='https://github.com/mimiranto' target="_blank"><FontAwesomeIcon icon={faGithub} size="2xl" style={{ color: "#ffffff" }} /></a></li>
+          <li className='CV' onClick={handleToggle}><Link to="/ma-nouvelle-page" target='_blank'>CV</Link></li>
         </ul>
       </div>
     </header>
