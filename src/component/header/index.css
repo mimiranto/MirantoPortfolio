@@ -58,10 +58,11 @@ html {
         transform: translateX(-1000px);
         transition: 1s;
         bottom: 0;
-        height: 89vh;
+        height: 85vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
         width: 100%;
     }
     ul {
