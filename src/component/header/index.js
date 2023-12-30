@@ -14,7 +14,7 @@ function Header() {
   
   return (
     <header className='Navbar'>
-      <h1>Portfolio</h1>
+      <h1>Porfolio</h1>
       <div className='tooglebtn' onClick={handleToggle}>
         <FontAwesomeIcon icon={faBars} size="2xl" className='burger' style={{ color: "#ffffff" }} />
         <FontAwesomeIcon icon={faTimes} size="2xl" className='cross' style={{ color: "#ffffff" }} />

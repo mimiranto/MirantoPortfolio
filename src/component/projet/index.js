@@ -1,4 +1,5 @@
 import './index.css'
+import Slider from '../slider';
 
 function Projet(){
 
@@ -6,6 +7,7 @@ function Projet(){
         <div id='projet'>
             <div className='projetcontainer'>
                 <h1>Projet</h1>
+                <Slider/>
             </div>
 
         </div>

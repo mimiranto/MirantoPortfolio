@@ -17,7 +17,7 @@
     margin-right: 2px;
     
 }
-ul{
+.reseau ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -25,7 +25,9 @@ ul{
     margin: 40px;
     margin-right: 69px;
 }
-
+.reseau svg{
+    font-size: 33px;
+}
 .CV a{
     text-decoration: none;
     color: white;
@@ -65,7 +67,7 @@ html {
         
         width: 100%;
     }
-    ul {
+    .reseau ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
