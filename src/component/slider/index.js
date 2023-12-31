@@ -2,13 +2,14 @@ import './index.css'
 import React, { useRef, useState } from 'react';
 import img1 from './Asset/TooLate.png';
 import img2 from './Asset/LittleItalia.png';
+import img3 from './Asset/XianPass.png';
 
 const Slider = () => {
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const showSlide = (index) => {
-    const newPosition = -index * 50 + '%';
+    const newPosition = -index * 33.3 + '%';
     sliderRef.current.style.transform = 'translateX(' + newPosition + ')';
   };
 
@@ -22,7 +23,7 @@ const Slider = () => {
     showSlide(currentIndex);
   };
 
-  const slideCount = 2; // Nombre total d'images
+  const slideCount = 3; // Nombre total d'images
 
   return (
     <div className='slider'>
@@ -36,7 +37,13 @@ const Slider = () => {
         <li className="trends__card" id='img2'>
           <a href='https://little-italia.vercel.app/' target='blank'>
             <img src={img2} alt="Little Italia" />
-            <h1>Projet Site : Little Italia</h1>
+            <h1>Little Italia</h1>
+          </a>
+        </li>
+        <li className="trends__card" id='img3'>
+          <a href='https://github.com/ZelGel/XianPass_last' target='blank'>
+            <img src={img3} alt="XianPass" />
+            <h1>XianPass</h1>
           </a>
         </li>
       </ul>
