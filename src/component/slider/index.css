@@ -1,29 +1,43 @@
-.trends__content{
-    padding: 0%;
+.trends__content {
+    padding: 0;
+    overflow: hidden;
 }
-.trends__content li{
+
+.trends__content li {
     text-decoration: none;
     list-style: none;
+    width: 100%; /* Chaque élément li occupe 100% de la largeur du conteneur parent */
+    box-sizing: border-box; /* Inclure la bordure et le rembourrage dans la largeur totale */
 }
+
+.trends__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trends__card a{
+    text-decoration: none;
+    color: white;
+}
+
 .trends__card img {
     width: 100%;
-    height: 30vh;
+    height: auto;
+    max-height: 30vh; /* Limite la hauteur maximale de l'image */
+    object-fit: cover;
 }
-.slider{
+
+.slider {
     position: relative;
+    overflow: hidden;
 }
-.slider ul{
+
+.slider ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    transition: transform 0.5s ease-in-out;
 }
-li a{
-    text-decoration: none;
-    text-align: center;
-    color :white;
-    font-size: 10px;
-}
-.slider .arrow{
+
+.slider .arrow {
     background-color: #00000080;
     border: none;
     color: #fff;
@@ -32,11 +46,41 @@ li a{
     outline: none;
     padding: 10px;
     position: absolute;
-   top: 33%;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.left{
+
+.left {
     left: 0;
 }
-.right{
+
+.right {
     right: 0;
+}
+
+@media screen and (max-width: 432px) {
+    .trends__content li {
+        margin-right: 10px; /* Ajoutez un espace de 10 pixels entre les éléments li */
+        width: 100%; /* Les éléments li occupent 100% de la largeur */
+        box-sizing: border-box; /* Inclure la bordure et le rembourrage dans la largeur totale */
+    }
+
+    .trends__card img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; /* Assurez-vous que l'image couvre complètement le conteneur */
+    }
+
+    .trends__card:nth-child(1) img {
+        width: 200px;
+    }
+
+    .trends__card:nth-child(2) img {
+        width: 300px;
+        height: 109px;
+    }
+
+    .trends__card a {
+        font-size: 8px;
+    }
 }
