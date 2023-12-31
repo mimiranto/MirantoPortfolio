@@ -83,7 +83,7 @@ html {
         display: none;
     }
     .active .reseau {
-        transform: translateX(0px);
+        transform: translateX(-13px);
         transition: 1s;
     }
     .active .burger{

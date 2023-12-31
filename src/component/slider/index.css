@@ -1,21 +1,22 @@
 .trends__content {
     padding: 0;
-    overflow: hidden;
 }
 
 .trends__content li {
     text-decoration: none;
     list-style: none;
-    width: 100%; /* Chaque élément li occupe 100% de la largeur du conteneur parent */
-    box-sizing: border-box; /* Inclure la bordure et le rembourrage dans la largeur totale */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .trends__card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; 
 }
-.trends__card a{
+
+.trends__card a {
     text-decoration: none;
     color: white;
 }
@@ -23,7 +24,7 @@
 .trends__card img {
     width: 100%;
     height: auto;
-    max-height: 30vh; /* Limite la hauteur maximale de l'image */
+    max-height: 30vh;
     object-fit: cover;
 }
 
@@ -46,7 +47,7 @@
     outline: none;
     padding: 10px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
 }
 
@@ -60,15 +61,15 @@
 
 @media screen and (max-width: 432px) {
     .trends__content li {
-        margin-right: 10px; /* Ajoutez un espace de 10 pixels entre les éléments li */
-        width: 100%; /* Les éléments li occupent 100% de la largeur */
-        box-sizing: border-box; /* Inclure la bordure et le rembourrage dans la largeur totale */
+        margin-right: 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .trends__card img {
         max-width: 100%;
         height: auto;
-        object-fit: cover; /* Assurez-vous que l'image couvre complètement le conteneur */
+        object-fit: cover;
     }
 
     .trends__card:nth-child(1) img {
@@ -82,5 +83,9 @@
 
     .trends__card a {
         font-size: 8px;
+    }
+    .slider .arrow{
+        top: 40%;
+        font-size: 15px;
     }
 }
