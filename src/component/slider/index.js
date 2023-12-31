@@ -22,7 +22,7 @@ const Slider = () => {
     showSlide(currentIndex);
   };
 
-  const slideCount = 5; // Remplacez par le nombre total de slides
+  const slideCount = 3; // Remplacez par le nombre total de slides
 
   return (
     <div className='slider'>
