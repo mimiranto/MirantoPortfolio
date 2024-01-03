@@ -35,9 +35,12 @@
         display: none;
     }
     .textecontainer{
+        text-align: center;
         width: 90%;
         margin-left: 20px;
         margin-top: 100px;
+        border: none;
+        background-color: #121212;
     }
     .textecontainer h3{
         font-size: 17px;
