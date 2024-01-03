@@ -12,6 +12,7 @@ function Header() {
     header.classList.toggle("active");
   } 
   
+  
   return (
     <header className='Navbar'>
       <h1>Porfolio</h1>

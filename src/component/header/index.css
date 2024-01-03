@@ -7,8 +7,8 @@
 }
 
 .Navbar h1{
-    margin-left: 58px;
-    margin-top: 30px;
+    margin-left: 98px;
+    margin-top: 37px;
 }
 
 .reseau li{
@@ -54,6 +54,10 @@ html {
 }
 
 @media screen and (max-width:432px){
+    .Navbar h1 {
+        margin-left: 64px;
+        margin-top: 28px;
+    }
     .reseau {
         position : absolute;
         background-color: #131212;
@@ -67,6 +71,7 @@ html {
         
         width: 100%;
     }
+  
     .reseau ul {
         display: flex;
         flex-direction: column;
@@ -85,10 +90,20 @@ html {
     .active .reseau {
         transform: translateX(-17px);
         transition: 1s;
+        width: 100%;
+    }
+    .active .Navbar{
+        z-index: 10;
+        position: fixed;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;;
     }
     .active .burger{
         display: none;
     }
+    
     .active .cross{
         display: block;
     }
