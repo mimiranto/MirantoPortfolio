@@ -107,5 +107,8 @@ html {
     .active .cross{
         display: block;
     }
+    body .active{
+        overflow: hidden;
+    }
     
 }

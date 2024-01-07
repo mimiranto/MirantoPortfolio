@@ -9,7 +9,7 @@ const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const showSlide = (index) => {
-    const newPosition = -index * 33.3 + '%';
+    const newPosition = -index * 50 + '%';
     sliderRef.current.style.transform = 'translateX(' + newPosition + ')';
   };
 
@@ -23,7 +23,7 @@ const Slider = () => {
     showSlide(currentIndex);
   };
 
-  const slideCount = 3; // Nombre total d'images
+  const slideCount = 2; // Nombre total d'images
 
   return (
     <div className='slider'>
@@ -40,13 +40,9 @@ const Slider = () => {
             <h1>Little Italia</h1>
           </a>
         </li>
-        <li className="trends__card" id='img3'>
-          <a href='https://github.com/ZelGel/XianPass_last' target='blank'>
-            <img src={img3} alt="XianPass" />
-            <h1>XianPass</h1>
-          </a>
-        </li>
-      </ul>
+
+  
+      </ul> 
 
       <button className='arrow left' onClick={prevSlide}>{'<'}</button>
       <button className='arrow right' onClick={nextSlide}>{'>'}</button>
